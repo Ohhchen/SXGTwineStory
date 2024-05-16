@@ -1,0 +1,1529 @@
+/* Global styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body{
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+  min-width:100vw;
+  min-height:100vh;
+  background-position:center center;
+  color: #eee;
+  background-color: grey;
+  overflow: auto;
+  font-family: 'Comic Neue', cursive;
+}
+
+#story, #passages{
+  max-width:100%;
+  margin:0;
+}
+
+#ui-bar.stowed~#story{
+  margin:0;
+}
+
+img{
+  width:50px;
+  padding:10px;
+}
+
+h2{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+button{
+  margin-top:20px;
+}
+
+/* Positioning custom button on start page */
+
+.button-wrapper{
+  margin-top:65vh;
+}
+
+/* Custom button overlay on map styling */
+.custom-button{
+  font-size: large;
+  border: 1px solid #57c;
+  position: absolute;
+  z-index:10000;
+}
+
+.custom-button a{
+  color:white;
+}
+
+/* Mini map on screen top right */
+
+.mini-map{
+  z-index:10000;
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  right:5vh;
+  top:5vh;
+}
+
+.label{
+  margin-top:10px;
+  padding:10px;
+  background-color:white;
+  border:1px solid black;
+  border-radius:4px;
+  width:60%;
+}
+
+.mini-image{
+  width:200px;
+  height:150px;
+  border-radius:4px;
+  border:1px solid black;
+  box-shadow: 2px 2px 2px black;
+  background-color:white;
+}
+
+/* Google map styling */
+
+#map{
+  position:static !important;
+}
+
+.marker-label{
+  color:black;
+  background-color:white;
+  padding:5px;
+  border:1px solid black;
+  border-radius:3px;
+  margin-bottom:60px;
+}
+
+/* Place-pin styling in Communities passage */
+
+.Skowkale{
+  position:absolute;
+  width:100px;
+  cursor:pointer;
+  left: 55%;
+  top: 50%;
+}
+
+.Skowkale-title{
+  position:absolute;
+  left: 52%;
+  top: 45%;
+  line-height: 0.5;
+  padding: 10px;
+  color:black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+.Skawahlook{
+  position:absolute;
+  width: 150px;
+  cursor: pointer;
+  left: 45%;
+  top: 15%;
+}
+
+.Skawahlook-title{
+  position:absolute;
+  left: 45%;
+  top: 10%;
+  line-height: 0.5;
+  padding: 10px;
+  color:black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+.Aitchelitz{
+  position: absolute;
+  width: 150px;
+  left: 45%;
+  top: 60%;
+  cursor: pointer;
+}
+
+.Aitchelitz-title{
+  position:absolute;
+  left: 45%;
+  top: 55%;
+  line-height: 0.5;
+  padding: 10px;
+  color:black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+.Lakahahmen{
+  position:absolute;
+  width:90px;
+  cursor:pointer;
+  left: 33%;
+  top: 30%;
+}
+
+.Lakahahmen-title{
+  position:absolute;
+  left: 30%;
+  top: 25%;
+  line-height: 0.5;
+  padding: 10px;
+  color:black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+.Tzeachten{
+  position:absolute;
+  width: 90px;
+  cursor: pointer;
+  left: 70%;
+  top: 30%;
+}
+
+.Tzeachten-title{
+  position:absolute;
+  left: 68%;
+  top: 25%;
+  line-height: 0.5;
+  padding: 10px;
+  color:black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+.Yakweakwioose{
+  position:absolute;
+  width: 160px;
+  cursor: pointer;
+  left: 60%;
+  top: 40%;
+}
+
+.Yakweakwioose-title{
+  position:absolute;
+  left: 55%;
+  top: 35%;
+  line-height: 0.5;
+  padding: 10px;
+  color:black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+/* How to play passage custom styling */
+
+#passage-how-to-play{
+  display:flex;
+  flex-direction:row;
+  width:100vw;
+  height:100vh;
+  margin:0px;
+}
+
+.left-column{
+  display:flex;
+  flex-direction:column;
+  width:25%;
+  height:100%;
+  color:black;
+  margin-left:50px;
+  margin-top:0px;
+}
+
+.middle-column{
+  display:flex;
+  flex-direction:column;
+  width:25%;
+  height:100%;
+  color:black;
+  margin-top:0px;
+}
+
+.middle-column2{
+  display:flex;
+  flex-direction:column;
+  width:25%;
+  height:100%;
+  color:black;
+  margin-left:50px;
+}
+
+.right-column{
+  display:flex;
+  flex-direction:column;
+  width:25%;
+  height:100%;
+  color:black;
+  margin-right:50px;
+  margin-left:50px;
+  margin-top:0px;
+}
+
+.column-top{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  height:50%;
+}
+
+.inner-column{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Grid HTML template styling */
+
+.passage{
+  text-align: center;
+}
+
+.passage-inner{
+  height:100vh;
+  width:100vw;
+  display:flex;
+  flex-direction:column;
+}
+
+.passage-inner br{
+  display:none;
+} 
+
+.passage-inner>div{
+  display:flex;
+  flex-direction:row;
+  flex-grow:1;
+  /* border: 1px solid red; */
+}
+
+.passage-inner>div>div{
+  flex-grow:1;
+  /* border:1px solid blue; */
+  color:black;
+}
+
+html.debug{
+  background:none !important;
+}
+
+/* Speech bubble styles */
+
+.box{
+  display:flex; 
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  color:black;
+  padding: 20px;
+  margin: 50px auto;
+  text-align: center;
+  font-weight: 900;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+  z-index:10000;
+}
+
+.box2{
+  display:inline-block; 
+  position: relative;
+  width: 50%;
+  color:black;
+  padding: 20px;
+  margin:50px auto;
+  text-align: center;
+  font-weight: 900;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+.sb1:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 23px;
+  top: -42px;
+  border: 10px solid transparent;
+  border-bottom: 32px solid black;
+  z-index: 2;
+}
+
+.sb1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 25px;
+  top: -32px;
+  border: 8px solid transparent;
+  border-bottom: 25px solid #fff;
+  z-index: 3;
+}
+
+.sb2:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 23px;
+  bottom: -42px;
+  border: 10px solid transparent;
+  border-top: 32px solid black;
+  z-index: 2;
+}
+
+.sb2:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 25px;
+  bottom: -31px;
+  border: 8px solid transparent;
+  border-top: 24px solid #fff;
+  z-index: 3;
+}
+
+.sb3:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -42px;
+  top: 17px;
+  border: 10px solid transparent;
+  border-right: 32px solid black;
+  z-index: 2;
+}
+
+.sb3:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -31px;
+  top: 20px;
+  border: 8px solid transparent;
+  border-right: 24px solid #fff;
+  z-index: 3;
+}
+
+.sb4:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -42px;
+  top: 17px;
+  border: 10px solid transparent;
+  border-left: 32px solid black;
+  z-index: 2;
+}
+
+.sb4:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -31px;
+  top: 20px;
+  border: 8px solid transparent;
+  border-left: 24px solid #fff;
+  z-index: 3;
+}
+
+.sb5:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 350px;
+  bottom: -42px;
+  border: 10px solid transparent;
+  border-top: 32px solid black;
+  z-index: 2;
+}
+
+.sb5:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 352px;
+  bottom: -31px;
+  border: 8px solid transparent;
+  border-top: 24px solid #fff;
+  z-index: 3;
+}
+
+.sb6:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 350px;
+  top: -42px;
+  border: 10px solid transparent;
+  border-bottom: 32px solid black;
+  z-index: 2;
+}
+
+.sb6:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 352px;
+  top: -32px;
+  border: 8px solid transparent;
+  border-bottom: 25px solid #fff;
+  z-index: 3;
+}
+
+.sb7:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 23px;
+  bottom: -42px;
+  border: 10px solid transparent;
+  border-top: 32px solid black;
+  z-index: 2;
+}
+
+.sb7:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 25px;
+  bottom: -31px;
+  border: 8px solid transparent;
+  border-top: 24px solid #fff;
+  z-index: 3;
+}
+
+.sb8:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 150px;
+  bottom: -42px;
+  border: 10px solid transparent;
+  border-top: 32px solid black;
+  z-index: 2;
+}
+
+.sb8:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 152px;
+  bottom: -31px;
+  border: 8px solid transparent;
+  border-top: 24px solid #fff;
+  z-index: 3;
+}
+
+.sb9:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 250px;
+  bottom: -42px;
+  border: 10px solid transparent;
+  border-top: 32px solid black;
+  z-index: 2;
+}
+
+.sb9:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 252px;
+  bottom: -31px;
+  border: 8px solid transparent;
+  border-top: 24px solid #fff;
+  z-index: 3;
+}
+
+.sb10:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 250px;
+  top: -42px;
+  border: 10px solid transparent;
+  border-bottom: 32px solid black;
+  z-index: 2;
+}
+
+.sb10:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 252px;
+  top: -32px;
+  border: 8px solid transparent;
+  border-bottom: 25px solid #fff;
+  z-index: 3;
+}
+
+.sb11:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 150px;
+  top: -42px;
+  border: 10px solid transparent;
+  border-bottom: 32px solid black;
+  z-index: 2;
+}
+
+.sb11:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 152px;
+  top: -32px;
+  border: 8px solid transparent;
+  border-bottom: 25px solid #fff;
+  z-index: 3;
+}
+
+/* External Link Modal Styles */
+
+#ui-dialog.open.custom {
+  opacity: 1;
+  width: 400px;
+}
+
+#ui-dialog-titlebar.custom {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+#ui-dialog-title.custom {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#ui-dialog-body.custom {
+  background-color: white;
+  border: none;
+  padding:10px;
+  color:black;
+}
+
+#ui-dialog-close{
+  width:50px;
+}
+
+.dialog-link{
+  display:block;
+  text-align:center;
+}
+
+/* Character image styles */
+
+.kwi{
+  width: 100px;
+}
+
+.kwi-position{
+  width: 200px;
+}
+
+.audio{
+  width: 5px;
+  cursor:pointer;
+}
+
+.audio-position{
+  width: 40px;
+  position: absolute;
+}
+
+.bear{
+  width: 100px;
+}
+
+.bear-position{
+  width: 200px;
+}
+
+.sturgeon{
+  width: 100px;
+}
+
+.sturgeon-position{
+  width: 200px;
+}
+
+.two-headed-snake{
+  width: 100px;
+}
+
+.two-headed-snake-position{
+  width: 200px;
+}
+
+.salmon{
+  width: 100px;
+}
+
+.salmon-position{
+  width: 200px;
+}
+
+.cougar{
+  width: 100px;
+}
+
+.cougar-position{
+  width: 200px;
+}
+
+.deer{
+  width: 100px;
+}
+
+.deer-position{
+  width: 200px;
+}
+
+/* Begin passages styles */
+
+body[data-tags~="Start"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/StartingPage.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="EnterName"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/IntroBackground.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position:center;
+  	height:100%;
+}
+
+body[data-tags~="Communities"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/BaseMapBase.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Aitchelitz styles */
+
+body[data-tags~="Location1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-00.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="6L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-06.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="7L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-07.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="8L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="9L1A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-01-09.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="Location2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="6L2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-06.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="7L2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-07.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="8L2A"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Aitchelitz/AIT-02-08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Leqamel styles */
+
+body[data-tags~="Location1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="6L1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-06.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="7L1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-07.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="8L1L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-01-08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="Location2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body[data-tags~="6L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-06.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="7L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-07.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="8L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="9L2L"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Leqamel/LEQ-02-09.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Yak styles */
+
+body[data-tags~="Location1Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-01-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="1L1Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-01-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="2L1Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-01-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="3L1Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-01-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="4L1Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-01-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="5L1Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-01-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="Location2Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L2Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L2Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L2Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L2Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L2Y"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Yak/YAK-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Tzeachten styles */
+
+body[data-tags~="Location1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="1L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="2L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="3L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="4L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="5L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="6L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-06.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="7L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-07.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="8L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="9L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-09.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="10L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="11L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-11.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="12L1T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-01-12.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom center;
+}
+
+body[data-tags~="Location2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-01.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-02.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-03.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-04.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-05.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="6L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-06.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="7L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-07.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="8L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-08.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="9L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-09.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="10L2T"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Tzeachten/TZE-02-10.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* Skowkale styles */
+
+body[data-tags~="Location1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="6L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-06.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="7L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-07.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="8L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="9L1SK"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-01-09.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="Location2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-00.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="1L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-01.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="2L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-02.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="3L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-03.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="4L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-04.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="5L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-05.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="6L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-06.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="7L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-07.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="8L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-08.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="9L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-09.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+body[data-tags~="10L2SK"]{
+	background: url("https://cedarspace.github.io/SXGTwineStory/images/Skowkale/SKO-02-10.JPG")no-repeat center center fixed;
+	background-size: cover;
+  	height:100%;
+}
+
+/* Skawahlook styles */
+
+body[data-tags~="Location1SW"]{
+background:url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-00.jpg")center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="6L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-06.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="7L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-07.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="8L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="9L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-09.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="10L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="11L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-11.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="12L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-12.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="13L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-13.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="14L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-14.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="15L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-15.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="16L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-16.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="17L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-17.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="18L1SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-01-18.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="Location2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="1L2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="2L2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="3L2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="4L2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-04.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="5L2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-05.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="6L2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-06.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="7L2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-07.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-tags~="8L2SW"]{
+	background-image: url("https://cedarspace.github.io/SXGTwineStory/images/Skawahlook/SKA-02-08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
